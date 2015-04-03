@@ -12,6 +12,8 @@ var THRESHOLD_DISTANCE = 100;
  *
  * Arguments:
  * pixels -- an array of pixel values
+ * modifyFn -- a callback function that takes in the RGB values of a single
+ *   pixel and returns new RGB values
  */
 function modifyEachPixel(pixels, modifyFn) {
   for (var i = 0; i < pixels.length; i += 4) {
